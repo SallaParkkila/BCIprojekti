@@ -1,0 +1,125 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "title": "The root schema",
+    "description": "The root schema comprises the entire JSON document.",
+    "default": {},
+    "examples": [
+        {
+            "id": 2555,
+            "username": "jonnak",
+            "password": "kkskk444o",
+            "firstName": "Jonna",
+            "lastName": "Koskela",
+            "email": "kosu.nonna@gmail.com",
+            "dateOfBirth": "1992-09-25",
+            "emailVerified": true,
+            "signUpDate": "2020-01-27"
+        }
+    ],
+    "required": [
+        "id",
+        "username",
+        "password",
+        "firstName",
+        "lastName",
+        "email",
+        "dateOfBirth",
+        "emailVerified",
+        "signUpDate"
+    ],
+    "properties": {
+        "id": {
+            "$id": "#/properties/id",
+            "type": "string",
+            "title": "The id schema",
+            "description": "user id.",
+            "default": 0,
+            "examples": [
+                2555
+            ]
+        },
+        "username": {
+            "$id": "#/properties/username",
+            "type": "string",
+            "title": "The username schema",
+            "description": "useename.",
+            "default": "",
+            "examples": [
+                "jonnak"
+            ]
+        },
+        "password": {
+            "$id": "#/properties/password",
+            "type": "string",
+            "title": "The password schema",
+            "description": "user password.",
+            "default": "",
+            "examples": [
+                "kkskk444o"
+            ]
+        },
+        "firstName": {
+            "$id": "#/properties/firstName",
+            "type": "string",
+            "title": "The firstName schema",
+            "description": "firstname.",
+            "default": "",
+            "examples": [
+                "Jonna"
+            ]
+        },
+        "lastName": {
+            "$id": "#/properties/lastName",
+            "type": "string",
+            "title": "The lastName schema",
+            "description": "lastname.",
+            "default": "",
+            "examples": [
+                "Koskela"
+            ]
+        },
+        "email": {
+            "$id": "#/properties/email",
+            "type": "string",
+            "title": "The email schema",
+            "description": "email.",
+            "default": "",
+            "examples": [
+                "kosu.nonna@gmail.com"
+            ]
+        },
+        "dateOfBirth": {
+            "$id": "#/properties/dateOfBirth",
+            "type": "string",
+            "title": "The dateOfBirth schema",
+            "description": "users date of birth.",
+            "default": "",
+            "examples": [
+                "1992-09-25"
+            ]
+        },
+        "emailVerified": {
+            "$id": "#/properties/emailVerified",
+            "type": "boolean",
+            "title": "The emailVerified schema",
+            "description": "email.",
+            "default": false,
+            "examples": [
+                true
+            ]
+        },
+        "signUpDate": {
+            "$id": "#/properties/signUpDate",
+            "type": "string",
+            "title": "The signUpDate schema",
+            "description": "sign up date.",
+            "default": "",
+            "examples": [
+                "2020-01-27"
+            ]
+        }
+    },
+    "additionalProperties": true
+}

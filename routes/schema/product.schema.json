@@ -1,0 +1,185 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "title": "The product schema",
+    "description": "The product schema comprises the entire JSON document.",
+    "default": {},
+    "examples": [
+        {
+            "id": 12345,
+            "title": "Electric guitar",
+            "description": "Pink semi-acoustic electric guitar, very good condition",
+            "userCategory": "music",
+            "location": "Kiiminki",
+            "image1": null,
+            "image2": null,
+            "image3": null,
+            "image4": null,
+            "askingPrice": 115,
+            "dateOfPosting": "2021-12-24",
+            "deliveryType": 2,
+            "sellersName": "Ville",
+            "sellersContact": 5672134
+        }
+    ],
+    "required": [
+        "id",
+        "title",
+        "description",
+        "userCategory",
+        "location",
+        "image1",
+        "image2",
+        "image3",
+        "image4",
+        "askingPrice",
+        "dateOfPosting",
+        "deliveryType",
+        "sellersName",
+        "sellersContact"
+    ],
+    "properties": {
+        "id": {
+            "$id": "#/properties/id",
+            "type": "string",
+            "title": "The id schema",
+            "description": "product id.",
+            "default": 0,
+            "examples": [
+                12345
+            ]
+        },
+        "title": {
+            "$id": "#/properties/title",
+            "type": "string",
+            "title": "The title schema",
+            "description": "product title.",
+            "default": "",
+            "examples": [
+                "Electric guitar"
+            ]
+        },
+        "description": {
+            "$id": "#/properties/description",
+            "type": "string",
+            "title": "The description schema",
+            "description": "product description.",
+            "default": "",
+            "examples": [
+                "Pink semi-acoustic electric guitar, very good condition"
+            ]
+        },
+        "userCategory": {
+            "$id": "#/properties/userCategory",
+            "type": "string",
+            "title": "The userCategory schema",
+            "description": "product category.",
+            "default": "",
+            "examples": [
+                "music"
+            ]
+        },
+        "location": {
+            "$id": "#/properties/location",
+            "type": "string",
+            "title": "The location schema",
+            "description": "location of the product.",
+            "default": "",
+            "examples": [
+                "Kiiminki"
+            ]
+        },
+        "image1": {
+            "$id": "#/properties/image1",
+            "type": "null",
+            "title": "The image1 schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": null,
+            "examples": [
+                null
+            ]
+        },
+        "image2": {
+            "$id": "#/properties/image2",
+            "type": "null",
+            "title": "The image2 schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": null,
+            "examples": [
+                null
+            ]
+        },
+        "image3": {
+            "$id": "#/properties/image3",
+            "type": "null",
+            "title": "The image3 schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": null,
+            "examples": [
+                null
+            ]
+        },
+        "image4": {
+            "$id": "#/properties/image4",
+            "type": "null",
+            "title": "The image4 schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": null,
+            "examples": [
+                null
+            ]
+        },
+        "askingPrice": {
+            "$id": "#/properties/askingPrice",
+            "type": "integer",
+            "title": "The askingPrice schema",
+            "description": "askingprice.",
+            "default": 0,
+            "examples": [
+                115
+            ]
+        },
+        "dateOfPosting": {
+            "$id": "#/properties/dateOfPosting",
+            "type": "string",
+            "title": "The dateOfPosting schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "2021-12-24"
+            ]
+        },
+        "deliveryType": {
+            "$id": "#/properties/deliveryType",
+            "type": "integer",
+            "title": "The deliveryType schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": 0,
+            "examples": [
+                2
+            ]
+        },
+        "sellersName": {
+            "$id": "#/properties/sellersName",
+            "type": "string",
+            "title": "The sellersName schema",
+            "description": "seller name.",
+            "default": "",
+            "examples": [
+                "Ville"
+            ]
+        },
+        "sellersContact": {
+            "$id": "#/properties/sellersContact",
+            "type": "integer",
+            "title": "The sellersContact schema",
+            "description": "sellers contact.",
+            "default": 0,
+            "examples": [
+                5672134
+            ]
+        }
+    },
+    "additionalProperties": true
+}
