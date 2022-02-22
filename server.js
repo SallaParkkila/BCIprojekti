@@ -6,7 +6,7 @@ const { v4: uuidv4 } = require('uuid');
 const bodyParser = require('body-parser');
 const res = require('express/lib/response')
 const app = express()
-//const port = 3000
+const port = 80
 const { default: Ajv } = require('ajv');
 const ajv = new Ajv();
 
@@ -182,11 +182,11 @@ let serverInstance = null;
 
 module.exports = {
     start: function() {
-        serverInstance = app.listen(app.get(port, process.env.PORT) ,function() {
-            console.log(app.get('port'));
-        });
+        serverInstance = app.listen(port, () => {
+            console.log(`listening port ${port}`)
+        })
 },
     close: function() {
     serverInstance.close();
 }
-};
+}
