@@ -1,0 +1,126 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "http://example.com/example.json",
+    "type": "array",
+    "title": "The root schema",
+    "description": "The root schema comprises the entire JSON document.",
+    "default": [],
+    "examples": [
+        [
+            {
+                "id": "12lls55",
+                "firstName": "Jonna",
+                "lastName": "Koskela",
+                "email": "kosu.nonna@gmail.com",
+                "dateOfBirth": "1992-09-25",
+                "emailVerified": true,
+                "signUpDate": "2020-01-27"
+            }
+        ]
+    ],
+    "items": {
+        "$id": "#/items",
+        "anyOf": [
+            {
+                "$id": "#/items/anyOf/0",
+                "type": "object",
+                "title": "The first anyOf schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": {},
+                "examples": [
+                    {
+                        "id": "12lls55",
+                        "firstName": "Jonna",
+                        "lastName": "Koskela",
+                        "email": "kosu.nonna@gmail.com",
+                        "dateOfBirth": "1992-09-25",
+                        "emailVerified": true,
+                        "signUpDate": "2020-01-27"
+                    }
+                ],
+                "required": [
+                    "id",
+                    "firstName",
+                    "lastName",
+                    "email",
+                    "dateOfBirth",
+                    "emailVerified",
+                    "signUpDate"
+                ],
+                "properties": {
+                    "id": {
+                        "$id": "#/items/anyOf/0/properties/id",
+                        "type": "string",
+                        "title": "The id schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": "",
+                        "examples": [
+                            "12lls55"
+                        ]
+                    },
+                    "firstName": {
+                        "$id": "#/items/anyOf/0/properties/firstName",
+                        "type": "string",
+                        "title": "The firstName schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": "",
+                        "examples": [
+                            "Jonna"
+                        ]
+                    },
+                    "lastName": {
+                        "$id": "#/items/anyOf/0/properties/lastName",
+                        "type": "string",
+                        "title": "The lastName schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": "",
+                        "examples": [
+                            "Koskela"
+                        ]
+                    },
+                    "email": {
+                        "$id": "#/items/anyOf/0/properties/email",
+                        "type": "string",
+                        "title": "The email schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": "",
+                        "examples": [
+                            "kosu.nonna@gmail.com"
+                        ]
+                    },
+                    "dateOfBirth": {
+                        "$id": "#/items/anyOf/0/properties/dateOfBirth",
+                        "type": "string",
+                        "title": "The dateOfBirth schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": "",
+                        "examples": [
+                            "1992-09-25"
+                        ]
+                    },
+                    "emailVerified": {
+                        "$id": "#/items/anyOf/0/properties/emailVerified",
+                        "type": "boolean",
+                        "title": "The emailVerified schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": false,
+                        "examples": [
+                            true
+                        ]
+                    },
+                    "signUpDate": {
+                        "$id": "#/items/anyOf/0/properties/signUpDate",
+                        "type": "string",
+                        "title": "The signUpDate schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": "",
+                        "examples": [
+                            "2020-01-27"
+                        ]
+                    }
+                },
+                "additionalProperties": true
+            }
+        ]
+    }
+}
