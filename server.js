@@ -6,7 +6,8 @@ const { v4: uuidv4 } = require('uuid');
 const bodyParser = require('body-parser');
 const res = require('express/lib/response')
 const app = express()
-const port = 80
+require('dotenv').config()
+const port = process.env.PORT
 const { default: Ajv } = require('ajv');
 const ajv = new Ajv();
 
@@ -65,13 +66,13 @@ app.get('/', (req, res) => {
     res.send('Hello World!')
 })
 
-const secret = require('./keys.json');
+const secret = process.env.secretkey;
 const jwt = require('jsonwebtoken'); 
 const JwtStrategy = require('passport-jwt').Strategy,
 ExtractJwt = require('passport-jwt').ExtractJwt;
 let options = {}
 options.jwtFromRequest = ExtractJwt.fromAuthHeaderAsBearerToken();
-options.secretOrKey = secret.secretkey;
+options.secretOrKey = secret;
 
 
 passport.use(new JwtStrategy(options, function(jwt_payload, done) {
@@ -87,7 +88,7 @@ app.post('/login', passport.authenticate('basic' , {session : false}), (req, res
        user: req.body.username
     };
     //res.send("secure toimii")
-    const token = jwt.sign(payloadData, secret.secretkey);
+    const token = jwt.sign(payloadData, secret);
 
     res.json({ token : token })
 })
