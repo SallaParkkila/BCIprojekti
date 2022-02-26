@@ -7,6 +7,7 @@ DELETE - by id
 
 When you create new user you put your username and password there and use Basic Auth to Authorization.
 Using https://bci-test.herokuapp.com/users/login you get your token which you can use to Bearer Token https://bci-test.herokuapp.com/jwtSecured
+Tested with Postman.
 
 You can do same things(GET, POST, PUT, DELETE) with products https://bci-test.herokuapp.com/products
 You can find products by location(Kemi, Oulu, Kiiminki) using https://bci-test.herokuapp.com/products/location/Oulu
