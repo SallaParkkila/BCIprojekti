@@ -9,9 +9,9 @@ When you create new user you put your username and password there and use Basic 
 Using https://bci-test.herokuapp.com/users/login you get your token which you can use to Bearer Token https://bci-test.herokuapp.com/jwtSecured
 
 You can do same things(GET, POST, PUT, DELETE) with products https://bci-test.herokuapp.com/products
-You can find products by location(Kemi, Oulu, Kiiminki) using https://bci-test.herokuapp.com/products/location/
-By category (music, winter sport, home)  https://bci-test.herokuapp.com/products/category/
-By date of posting(2022-02-04, 2022-01-01, 2021-12-24) https://bci-test.herokuapp.com/products/posting/
+You can find products by location(Kemi, Oulu, Kiiminki) using https://bci-test.herokuapp.com/products/location/Oulu
+By category (music, winter sport, home)  https://bci-test.herokuapp.com/products/category/home
+By date of posting(2022-02-04, 2022-01-01, 2021-12-24) https://bci-test.herokuapp.com/products/posting/2021-12-24
 
 Some tests for users and products are made by using Mocha
 
